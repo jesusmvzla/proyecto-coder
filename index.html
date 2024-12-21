@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--fonts-->
+    <!--FIRA SANS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Bootstrap CCS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>AIRSOFT ZONE</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <!-- <img src="./img/sinfondo-logo.png" alt="logo ZONA AIRSOFT"> -->
+            <!--nav original sin boostrap-->
+            <!-- <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/arsenal.html">Arsenal</a></li>
+                    <li><a href="./pages/hq.html">HQ</a></li>
+                    <li><a href="./pages/contactos.html">Contacto</a></li>
+                </ul>
+            </nav> -->
+
+            <!--bootstrap navbar-->
+
+            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #061008;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./img/sinfondo-logo.png" alt="logo ZONA AIRSOFT"
+                            width="30" height="24">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/arsenal.html">Arsenal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/hq.html">HQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contactos.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <h1>Airsoft Zone</h1>
+    </header>
+
+    <main> <!--contenido principal-->
+        <section class="hero-index"> <!--divison del contenido por tematica-->
+            <p> ¡Lleva tu juego al siguiente nivel!</p>
+            <p> Accede al mejor arsenal de réplicas, accesorios
+                y gear táctico diseñado para dominar el campo de batalla. Aquí encontrarás todo lo que necesitas para
+                que tu equipamiento esté a la altura de tu talento.</p>
+            <p>¡Es hora de subir de nivel!</p>
+            <a href="./pages/arsenal.html">VER ARSENAL</a>
+        </section>
+
+        <!--CAJAS PRODUCTOS POPULARES ORIGINAL-->
+
+        <!-- <h2>PRODUCTOS POPULARES</h2>
+
+        <section class="productos-populares">
+
+            <div class="caja-producto">
+                <img src="./img/productos-populares/cyma.jpg" alt="cyma airsoft m4">
+                <h3>CYMA Carabina M4 AEG Airsoft</h3>
+                <p>Categoría: Réplicas</p>
+                <p>Marca: EVIKE & CYMA</p>
+                <p>Tipo: AEG</p>
+                <p>Material: Plástico y Metal</p>
+                <h4>Precio: COP$1.850.000</h4>
+                <a href="">COMPRAR</a>
+            </div>
+
+            <div class="caja-producto">
+                <img src="./img/productos-populares/matrix-vest.jpg" alt="chaleco matrix airsoft">
+                <h3>MATRIX chaleco porta placas AIRSOFT</h3>
+                <p>Categoría: Equipamiento</p>
+                <p>Marca: Matrix</p>
+                <p>Tipo: Multicam</p>
+                <p>Material: Nilon</p>
+                <h4>Precio: COP$850.000</h4>
+                <a href="">COMPRAR</a>
+            </div>
+
+            <div class="caja-producto">
+                <img src="./img/productos-populares/avengers-helmet.jpg" alt="casco avengers airsoft">
+                <h3>Casco ligero AVENGERS con visor AIRSOFT</h3>
+                <p>Categoría: Equipamiento</p>
+                <p>Marca: Avengers</p>
+                <p>Tipo: Verde Oliva</p>
+                <p>Material: Polímero resistente</p>
+                <h4>Precio: COP$325.000</h4>
+                <a href="">COMPRAR</a>
+            </div>
+        </section> -->
+
+        <!--CAJAS PRODUCTOS POPULARES ORIGINAL GRILLA BOOTSTRAP-->
+        <h2>PRODUCTOS POPULARES</h2>
+
+        <section class="container productos-populares">
+            <div class="row">
+
+                <div class="caja-producto col-lg-3 col-md-6 col-xs-12">
+                    <img src="./img/productos-populares/cyma.jpg" alt="cyma airsoft m4">
+                    <h3>CYMA Carabina M4 AEG Airsoft</h3>
+                    <p>Categoría: Réplicas</p>
+                    <p>Marca: EVIKE & CYMA</p>
+                    <p>Tipo: AEG</p>
+                    <p>Material: Plástico y Metal</p>
+                    <h4>Precio: COP$1.850.000</h4>
+                    <a href="">COMPRAR</a>
+                </div>
+
+                <div class="caja-producto col-lg-3 col-md-6 col-xs-12">
+                    <img src="./img/productos-populares/matrix-vest.jpg" alt="chaleco matrix airsoft">
+                    <h3>MATRIX chaleco porta placas AIRSOFT</h3>
+                    <p>Categoría: Equipamiento</p>
+                    <p>Marca: Matrix</p>
+                    <p>Tipo: Multicam</p>
+                    <p>Material: Nilon</p>
+                    <h4>Precio: COP$850.000</h4>
+                    <a href="">COMPRAR</a>
+                </div>
+
+                <div class="caja-producto col-lg-3 col-md-6 col-xs-12">
+                    <img src="./img/productos-populares/avengers-helmet.jpg" alt="casco avengers airsoft">
+                    <h3>Casco ligero AVENGERS con visor AIRSOFT</h3>
+                    <p>Categoría: Equipamiento</p>
+                    <p>Marca: Avengers</p>
+                    <p>Tipo: Verde Oliva</p>
+                    <p>Material: Polímero resistente</p>
+                    <h4>Precio: COP$325.000</h4>
+                    <a href="">COMPRAR</a>
+                </div>
+
+                <div class="caja-producto col-lg-3 col-md-6 col-xs-12">
+                    <img src="./img/productos-populares/tokyo-desert.jpg" alt="tokyo desert marui">
+                    <h3>Pistola a gas Tokyo Marui Desert 4.3</h3>
+                    <p>Categoría: Réplicas</p>
+                    <p>Marca: Tokyo Marui</p>
+                    <p>Tipo: Green Gas</p>
+                    <p>Material: Polímero resistente</p>
+                    <h4>Precio: COP$985.000</h4>
+                    <a href="">COMPRAR</a>
+                </div>
+
+        </section>
+
+        <!--LO NUEVO EN NUESTRO HQ -->
+        <section class="nuevo-hq">
+            <h2>LO NUEVO EN NUESTRO HQ</h2>
+            <div class="caja-hq">
+                <img src="./img/HQ index/hq-1.png" alt="nuevo video técnicas cqb">
+                <div>
+                    <h3>10 tips esenciales para elevar tu juego y aprovechar tu equipo</h3>
+                    <p>Conoce técnicas esenciales para destacar sobre tu juego, especialmente en escenarios CQB donde el
+                        manejo de esquinas y tu posicionamiento marcará la diferencia.</p>
+                    <p><a href="https://www.youtube.com/watch?v=3n6Y_tgk-TI&t=71s&pp=ygUTMTAgdGlwcyBjcWIgYWlyc29mdA%3D%3D"
+                            target="_blank">VER MÁS</a></p>
+                </div>
+            </div>
+
+            <div class="caja-hq">
+                <img src="./img/HQ index/hq-2.jpg" alt="nuevo campo de airsoft">
+                <div>
+                    <h3>Atención Bogotá: nuevo campo CQB a cielo abierto</h3>
+                    <p>Conoce el nuevo campo de nuestros compañeros de Airsoft Las Palmas a cielo abierto y con un gran
+                        esquema CQB.</p>
+                    <p><a href="https://airsoftbogotalaspalmas.com/" target="_blank">VER MÁS</a></p>
+                </div>
+            </div>
+
+            <div class="caja-hq">
+                <img src="./img/HQ index/hq-3.png" alt="video elige bien tu réplica">
+                <div>
+                    <h3>Aprende a elegir y comprar la réplica IDEAL para ti</h3>
+                    <p>Cientos de modelos, precios y características, pero ¿cuál es la réplica que debes comprar según
+                        tus
+                        objetivos y estilo de juego? ¡acá te lo respondemos!</p>
+                    <a href="https://www.youtube.com/watch?v=6nVevlRQcj0&pp=ygUWRUxFR0lSIFJFUExJQ0EgQUlSU09GVA%3D%3D"
+                        target="_blank">VER MÁS</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <!--LOGO FOOTER-->
+                <img src="./img/sinfondo-logo.png" alt="logo airsoft zone">
+            </div>
+            <div class="redes-sociales"> <!--REDES FOOTER-->
+                <h2>SÍGUENOS</h2>
+                <ul><a href="https://www.instagram.com/" target="_blank"><img src="./img/footer/IG-ICON.png"
+                            alt="instagram icon"></a></ul>
+                <ul><a href="https://www.youtube.com/" target="_blank"><img src="./img/footer/YT-ICON.png"
+                            alt="youtube icon"></a></ul>
+                <ul><a href="https://www.facebook.com/" target="_blank"><img src="./img/footer/FB-ICON.png"
+                            alt="youtube icon"></a></ul>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39472667477!2d-74.27261661242913!3d4.648620627506904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoSwgQm9nb3Rh!5e0!3m2!1sen!2sco!4v1732665298267!5m2!1sen!2sco"
+                    width="200" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+        <p>Todos los derechos reservados AIRSOFT ZONE™ 2024</p>
+        <p>Proyecto de Jesús Morales para CoderHouse - FullStack Course</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
