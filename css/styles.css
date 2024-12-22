@@ -314,7 +314,7 @@ footer div {
     color: white;
 }
 
-.boton-lista:hover {
+.boton-lista:hover, .boton-comprar:hover {
     background-color: #061008;
     color: white;
 }
@@ -356,10 +356,6 @@ footer div {
     border-radius: 5px;
 }
 
-.boton-nav {
-    border: solid;
-    background-color: #ff0000;
-}
 
 /* MEDIA QUERY */
 
