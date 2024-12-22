@@ -1,83 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
-        <!--fonts-->
-        <!--FIRA SANS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-        <!--Bootstrap CCS-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <title>AIRSOFT ZONE</title>
-    </head>
-    
-    <body>
-    
-        <header>
-            <div class="container-fluid w-100">
-                <!-- <img src="./img/sinfondo-logo.png" alt="logo ZONA AIRSOFT"> -->
-                <!--nav original sin boostrap-->
-                <!-- <nav>
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="./pages/arsenal.html">Arsenal</a></li>
-                        <li><a href="./pages/hq.html">HQ</a></li>
-                        <li><a href="./pages/contactos.html">Contacto</a></li>
-                    </ul>
-                </nav> -->
-    
-                <!--bootstrap navbar-->
-    
-                <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #061008;">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><img src="../img/sinfondo-logo.png" alt="logo ZONA AIRSOFT" width="30" height="24">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/arsenal.html">Arsenal</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/hq.html">HQ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/contactos.html">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--fonts-->
+    <!--FIRA SANS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Bootstrap CCS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>AIRSOFT ZONE</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid w-100">
+            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #061008;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="../img/sinfondo-logo.png" alt="logo ZONA AIRSOFT"
+                            width="30" height="24">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/arsenal.html">Arsenal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/hq.html">HQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-            </div>
-            
-            <h1>Airsoft Zone</h1>
-        </header>
+                </div>
+            </nav>
+        </div>
+        <h1>Airsoft Zone</h1>
+    </header>
+
+
+    <section class="container-fluid arsenal-tienda">
+        <!-- Menú tienda arsenal -->
+        <div>
+            <div class="row">
+                <div class="col-lg-2 col-sm-4 menu-arsenal">
+                    <ul class="container">
+                        <hr>
+                        <h4>Replicas</h4>
+                        <li><a href="#primarias" class="boton-lista">Primarias</a></li>
+                        <li><a href="#secundarias" class="boton-lista">Secundarias</a></li>
+                        <hr>
+                        <h4>Equipamiento</h4>
+                        <li><a href="#proteccion" class="boton-lista">Protección</a></li>
+                        <li><a href="#accesorios" class="boton-lista">Accesorios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-10 col-sm-8 productos-arsenal">
+                    <div id="primarias">
+                        <hr>
+                        <h4 class="titulo-categoria">Primarias</h4>
+                        <div class="d-flex flex-wrap caja-arsenal justify-content-center">
+
+                            <div class="col-lg-3 arsenal-tarjeta">
+                                <img src="../img/productos-populares/cyma.jpg" alt="cyma airsoft m4"
+                                    class="imagen-tarjeta">
+                                <h3>CYMA Carabina M4</h3>
+                                <p>Categoría: Réplicas Primarias</p>
+                                <p>Marca: EVIKE & CYMA</p>
+                                <p>Tipo: AEG</p>
+                                <p>Material: Plástico y Metal</p>
+                                <h4>Precio: COP$1.850.000</h4>
+                                <a href="" class="boton-comprar">COMPRAR</a>
+                            </div>
+
+                            <div class="col-lg-3 arsenal-tarjeta">
+                                <img src="../img/arsenal/replicas/primarias/ak12-arcturus.jpg" alt="Arturus AK12"
+                                    class="imagen-tarjeta">
+                                <h3>ARTURUS AK-12</h3>
+                                <p>Categoría: Réplicas Primarias</p>
+                                <p>Marca: Arturus</p>
+                                <p>Tipo: AEG</p>
+                                <p>Material: Plástico y Metal</p>
+                                <h4>Precio: COP$2.150.000</h4>
+                                <a href="" class="boton-comprar">COMPRAR</a>
+                            </div>
+
+                            <div class="col-lg-3 arsenal-tarjeta">
+                                <img src="../img/arsenal/replicas/primarias/p90-novritsch.jpg" alt="Novritsch P90"
+                                    class="imagen-tarjeta">
+                                <h3>Novritsch P90</h3>
+                                <p>Categoría: Réplicas Primarias</p>
+                                <p>Marca: Novritsch</p>
+                                <p>Tipo: AEG</p>
+                                <p>Material: Plástico y Metal</p>
+                                <h4>Precio: COP$2.350.000</h4>
+                                <a href="" class="boton-comprar">COMPRAR</a>
+                            </div>
+                        </div>
+
+                        <div id="secundarias">
+                            <hr>
+                            <h4 class="titulo-categoria">Secundarias</h4>
+                            <div class="d-flex flex-wrap caja-arsenal justify-content-center">
+
+                                <div class="col-lg-3 arsenal-tarjeta">
+                                    <img src="../img/arsenal/replicas/secundarias/aps-mantis.jpg" alt="Mantis APS"
+                                        class="imagen-tarjeta">
+                                    <h3>Mantis APS</h3>
+                                    <p>Categoría: Réplicas Secundarias</p>
+                                    <p>Marca: Mantis</p>
+                                    <p>Tipo: GreenGas</p>
+                                    <p>Material: Plástico y Metal</p>
+                                    <h4>Precio: COP$1.150.000</h4>
+                                    <a href="" class="boton-comprar">COMPRAR</a>
+                                </div>
+
+                                <div class="col-lg-3 arsenal-tarjeta">
+                                    <img src="../img/arsenal/replicas/secundarias/colt-cybergun.jpg" alt="Cybergun COLT"
+                                        class="imagen-tarjeta">
+                                    <h3>Cybergun COLT</h3>
+                                    <p>Categoría: Réplicas Secundarias</p>
+                                    <p>Marca: Cybergun</p>
+                                    <p>Tipo: GreenGas</p>
+                                    <p>Material: Full Metal</p>
+                                    <h4>Precio: COP$1.325.000</h4>
+                                    <a href="" class="boton-comprar">COMPRAR</a>
+                                </div>
+
+                                <div class="col-lg-3 arsenal-tarjeta">
+                                    <img src="../img/arsenal/replicas/secundarias/pfs9-janus.jpg" alt="JANUS PFS9 Licenciada"
+                                        class="imagen-tarjeta">
+                                    <h3>JANUS PFS9 Licenciada</h3>
+                                    <p>Categoría: Réplicas Secundarias</p>
+                                    <p>Marca: JANUS</p>
+                                    <p>Tipo: GreenGas</p>
+                                    <p>Material: full Metal</p>
+                                    <h4>Precio: COP$1.215.000</h4>
+                                    <a href="" class="boton-comprar">COMPRAR</a>
+                                </div>
+                            </div>
+
+                            <div id="proteccion">
+                                <hr>
+                                <h4 class="titulo-categoria">Protección</h4>
+                                <div class="d-flex flex-wrap caja-arsenal justify-content-center">
+
+                                    <div class="col-lg-3 arsenal-tarjeta">
+                                        <img src="../img/productos-populares/matrix-vest.jpg" alt="MATRIX Chaleco Porta Placas"
+                                            class="imagen-tarjeta">
+                                        <h3>MATRIX Chaleco Porta Placas</h3>
+                                        <p>Categoría: Protección</p>
+                                        <p>Marca: Matrix </p>
+                                        <p>Tipo: Multicam</p>
+                                        <p>Material: Nilon</p>
+                                        <h4>Precio: COP$850.000</h4>
+                                        <a href="" class="boton-comprar">COMPRAR</a>
+                                    </div>
+
+                                    <div class="col-lg-3 arsenal-tarjeta">
+                                        <img src="../img/arsenal/equipamiento/proteccion/emerson-plate.jpg" alt="Emerson Chaleco Porta Placas"
+                                            class="imagen-tarjeta">
+                                        <h3>Emerson Chaleco Porta Placas</h3>
+                                        <p>Categoría: Protección</p>
+                                        <p>Marca: Emerson</p>
+                                        <p>Tipo: Urban Black</p>
+                                        <p>Material: Nilon</p>
+                                        <h4>Precio: COP$ 785.000</h4>
+                                        <a href="" class="boton-comprar">COMPRAR</a>
+                                    </div>
+
+                                    <div class="col-lg-3 arsenal-tarjeta">
+                                        <img src="../img/arsenal/equipamiento/proteccion/kingrin-googles.jpg" alt="Kingrin Gafas Tácticas"
+                                            class="imagen-tarjeta">
+                                        <h3>Kingrin Gafas Tácticas</h3>
+                                        <p>Categoría: Protección</p>
+                                        <p>Marca: Kingrin</p>
+                                        <p>Tipo: Gafas</p>
+                                        <p>Material: Certificado</p>
+                                        <h4>Precio: COP$350.000</h4>
+                                        <a href="" class="boton-comprar">COMPRAR</a>
+                                    </div>
+                                </div>
+
+                                <div id="accesorios">
+                                    <hr>
+                                    <h4 class="titulo-categoria">Accesorios</h4>
+                                    <div class="d-flex flex-wrap caja-arsenal justify-content-center">
     
+                                        <div class="col-lg-3 arsenal-tarjeta">
+                                            <img src="../img/arsenal/equipamiento/accesorios/acog-owl.jpg" alt="Mira Acog Owl"
+                                                class="imagen-tarjeta">
+                                            <h3>Mira 4x Acog Owl</h3>
+                                            <p>Categoría: Accesorios</p>
+                                            <p>Marca: Oswl</p>
+                                            <p>Tipo: 4x Acog</p>
+                                            <p>Material: Metal</p>
+                                            <h4>Precio: COP$ 550.000</h4>
+                                            <a href="" class="boton-comprar">COMPRAR</a>
+                                        </div>
     
+                                        <div class="col-lg-3 arsenal-tarjeta">
+                                            <img src="../img/arsenal/equipamiento/accesorios/aim-reddot.jpg" alt="Mira Reddot 1x AIM"
+                                                class="imagen-tarjeta">
+                                            <h3>Mira Reddot 1x AIM</h3>
+                                            <p>Categoría: Accesorios </p>
+                                            <p>Marca: AIM</p>
+                                            <p>Tipo: Red Dot</p>
+                                            <p>Material: Metal</p>
+                                            <h4>Precio: COP$320.000</h4>
+                                            <a href="" class="boton-comprar">COMPRAR</a>
+                                        </div>
+    
+                                        <div class="col-lg-3 arsenal-tarjeta">
+                                            <img src="../img/arsenal/equipamiento/accesorios/lumen-element.jpg" alt="Linterna Lumen Element"
+                                                class="imagen-tarjeta">
+                                            <h3>Linterna Lumen Element</h3>
+                                            <p>Categoría: Accesorios</p>
+                                            <p>Marca: Element</p>
+                                            <p>Tipo: Presión</p>
+                                            <p>Material: Plástico y Metal</p>
+                                            <h4>Precio: COP$185.000</h4>
+                                            <a href="" class="boton-comprar">COMPRAR</a>
+                                        </div>
+                                    </div>
+
+                            </div>
+    </section>
+
+
     <footer>
         <div class="footer">
             <div>
                 <!--LOGO FOOTER-->
                 <img src="../img/sinfondo-logo.png" alt="logo airsoft zone">
             </div>
-                        
+
             <div class="redes-sociales"> <!--REDES FOOTER-->
                 <h2>SÍGUENOS</h2>
                 <ul><a href="https://www.instagram.com/" target="_blank"><img src="../img/footer/IG-ICON.png"
@@ -87,22 +264,22 @@
                 <ul><a href="https://www.facebook.com/" target="_blank"><img src="../img/footer/FB-ICON.png"
                             alt="youtube icon"></a></ul>
             </div>
-            
+
             <div>
-                    <iframe
+                <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39472667477!2d-74.27261661242913!3d4.648620627506904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoSwgQm9nb3Rh!5e0!3m2!1sen!2sco!4v1732665298267!5m2!1sen!2sco"
                     width="200" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </div>
 
-    </div>
         <p>Todos los derechos reservados AIRSOFT ZONE™ 2024</p>
         <p>Proyecto de Jesús Morales para CoderHouse - FullStack Course</p>
-
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>

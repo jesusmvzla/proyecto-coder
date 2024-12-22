@@ -215,11 +215,23 @@ main .hero-nosotros h2 {
 
 .imagen-nosotros {
     object-fit: cover;
+    margin: 10px 0 10px 0;
 }
 
 .marcas div img {
     padding: 5px;
     object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #D22C18;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    background-color: #D22C18;
 }
 
 /* CONTACTO */
@@ -287,13 +299,83 @@ footer div {
     margin: 15px;
 }
 
+/* ARSENAL */
+
+.menu-arsenal ul li {
+    margin: 15px 0 15px 0;
+}
+
+.menu-arsenal ul li a {
+    text-decoration: none;
+    font-family: "Fira Sans", sans-serif;
+    background-color: #D22C18;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.boton-lista:hover {
+    background-color: #061008;
+    color: white;
+}
+
+.imagen-tarjeta {
+    width: 180px;
+    margin: 10px;
+    justify-self: center;
+}
+
+.arsenal-tarjeta {
+    background-color: #FDFEF8;
+    margin: 5px;
+    padding: 15px 5px 15px 5px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.arsenal-tarjeta h3,
+.arsenal-tarjeta h4 {
+    font-size: large;
+}
+
+.arsenal-tarjeta p {
+    padding: 0;
+    margin: 0;
+}
+
+.boton-comprar {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FDFEF8;
+    background-color: #D22C18;
+    padding: 5px;
+    margin: 10px;
+    border: #ffffff;
+    border-radius: 5px;
+}
+
+.boton-nav {
+    border: solid;
+    background-color: #ff0000;
+}
 
 /* MEDIA QUERY */
+
+/* INDEX */
 
 @media screen and (max-width:950px) {
     .footer {
         display: flex;
         flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .productos-arsenal .titulo-categoria {
+        text-align: center;
     }
 }
 
@@ -373,6 +455,16 @@ footer div {
         margin: 1px;
         width: 30px;
         height: auto;
+    }
+
+}
+
+/* ARSENAL */
+
+@media screen and (max-width:576px) {
+
+    .menu-arsenal {
+        text-align: center;
     }
 
 
