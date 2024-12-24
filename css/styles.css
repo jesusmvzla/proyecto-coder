@@ -73,7 +73,7 @@ header h1 {
 /* INDEX */
 /*HERO BANNER*/
 
-main .hero-index {
+.hero-index {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,13 +90,13 @@ main .hero-index {
     color: #FDFEF8;
 }
 
-main .hero-index p {
+.hero-index p {
     font-weight: bold;
     font-size: 25px;
     margin: 10px;
 }
 
-main .hero-index a {
+.hero-index a {
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
@@ -121,42 +121,51 @@ main {
 
 /*POPULAR EN EL ARSENAL*/
 
-main .productos-populares img {
+.productos-populares img {
     width: 200px;
     height: auto;
     margin: 5px;
-    border-radius: 8px;
 }
 
-main .productos-populares a {
+.productos-populares a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
     color: #FDFEF8;
     background-color: #D22C18;
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
     border: #ffffff;
     border-radius: 5px;
+    display: inline-block;
+    width: auto;
 }
 
-main .productos-populares h4 {
+.productos-populares h4 {
     font-weight: bolder;
     font-size: 18px;
-    text-decoration: underline;
     margin: 10px;
-    color: #FDFEF8;
+    color: #000000;
 }
 
-main .productos-populares {
-    color: #FDFEF8;
-}
-
-main .productos-populares .caja-producto {
+.caja-producto {
     border: solid;
     border-radius: 8px;
+    border-color: #979797;
+    border-width: 1px;
+    margin: 5px;
     padding: 5px;
-    background-color: #061008;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+.caja-producto p {
+    padding: 0;
+    margin: 0;
+}
+
+.caja-producto h3 {
+    font-size: large;
 }
 
 main h2 {
@@ -166,21 +175,24 @@ main h2 {
 
 /* HQ */
 
-main .nuevo-hq img {
+.nuevo-hq img {
     width: 300px;
     height: auto;
     margin: 5px;
     border-radius: 8px;
+    object-fit: contain;
 }
 
-main .nuevo-hq .caja-hq {
+.nuevo-hq .caja-hq {
     display: flex;
-    border: 2px solid #6C5032;
+    border: solid;
     border-radius: 8px;
+    border-color: #979797;
+    border-width: 1px;
     margin: 15px;
 }
 
-main .nuevo-hq .caja-hq div {
+.nuevo-hq .caja-hq div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,11 +200,11 @@ main .nuevo-hq .caja-hq div {
     width: 100%;
 }
 
-main .nuevo-hq .caja-hq div p {
+.nuevo-hq .caja-hq div p {
     margin: 8px;
 }
 
-main .nuevo-hq a {
+.nuevo-hq a {
     display: inline-block;
     justify-content: center;
     text-decoration: none;
@@ -206,7 +218,7 @@ main .nuevo-hq a {
 
 /* NOSOTROS */
 
-main .hero-nosotros h2 {
+.hero-nosotros h2 {
     text-align: center;
     text-decoration: solid;
     font-size: 25px;
@@ -236,19 +248,34 @@ main .hero-nosotros h2 {
 
 /* CONTACTO */
 
-.formulario-contacto .submit-formulario {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #FDFEF8;
-    background-color: #D22C18;
-    padding: 2px;
-}
-
 .formulario-contacto {
     font-family: "Fira Sans", sans-serif;
-    text-align: center;
-    height: 250px;
+    padding: 10px;
+}
+
+.informacion-contacto {
+    padding: 10px;
+}
+
+.caja-contacto {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+#input-mensaje {
+    height: 100px;
+}
+
+.enviar-contacto {
+    font-weight: bold !important;
+    color: #FDFEF8 !important;
+    background-color: #D22C18 !important;
+    padding: 5px !important;
+    margin: 5px !important;
+    border: #ffffff !important;
+    border-radius: 5px !important;
+    display: inline-block !important;
+    width: auto !important;
 }
 
 /* FOOTER */
@@ -283,7 +310,6 @@ footer p {
 footer .redes-sociales {
     display: flex;
     justify-content: center;
-
 }
 
 footer div .redes-sociales ul img {
@@ -314,7 +340,8 @@ footer div {
     color: white;
 }
 
-.boton-lista:hover, .boton-comprar:hover {
+.boton-lista:hover,
+.boton-comprar:hover {
     background-color: #061008;
     color: white;
 }
@@ -359,7 +386,11 @@ footer div {
 
 /* MEDIA QUERY */
 
-/* INDEX */
+@media screen and (max-width:1335px) {
+    .caja-producto img {
+        width: 120px;
+    }
+}
 
 @media screen and (max-width:950px) {
     .footer {
@@ -368,10 +399,13 @@ footer div {
     }
 }
 
-
 @media screen and (max-width:992px) {
     .productos-arsenal .titulo-categoria {
         text-align: center;
+    }
+
+    .caja-producto img {
+        width: 200px;
     }
 }
 
@@ -389,7 +423,6 @@ footer div {
 }
 
 @media screen and (max-width:790px) {
-
     main .nuevo-hq .caja-hq {
         display: flex;
         flex-direction: column;
@@ -420,7 +453,6 @@ footer div {
     }
 }
 
-
 @media screen and (max-width:670px) {
     main .hero-index p {
         font-weight: bold;
@@ -434,6 +466,19 @@ footer div {
     }
 }
 
+@media screen and (max-width:620px) {
+    .caja-contacto {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .menu-arsenal {
+        text-align: center;
+    }
+}
 
 @media screen and (max-width:440px) {
     main .hero-index p {
@@ -452,16 +497,4 @@ footer div {
         width: 30px;
         height: auto;
     }
-
-}
-
-/* ARSENAL */
-
-@media screen and (max-width:576px) {
-
-    .menu-arsenal {
-        text-align: center;
-    }
-
-
 }
