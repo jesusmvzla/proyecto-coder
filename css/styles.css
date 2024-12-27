@@ -107,6 +107,10 @@ header h1 {
     border-radius: 8px;
 }
 
+.hero-index a:hover {
+    color: white;
+}
+
 main h2 {
     text-align: center;
     color: #061008;
@@ -204,7 +208,7 @@ main h2 {
     margin: 8px;
 }
 
-.nuevo-hq a {
+.nuevo-hq .caja-hq a {
     display: inline-block;
     justify-content: center;
     text-decoration: none;
@@ -214,6 +218,12 @@ main h2 {
     background-color: #D22C18;
     padding: 5px;
     border-radius: 8px;
+}
+
+.caja-hq a:hover,
+.caja-producto a:hover {
+    background-color: #061008;
+    color: white;
 }
 
 /* NOSOTROS */
@@ -384,6 +394,109 @@ footer div {
 }
 
 
+/* HQ */
+
+.tarjeta-noticia {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.tarjeta-noticia p,
+.tarjeta-noticia h3 {
+    text-align: left;
+    padding: 0 5px 0 5px;
+    text-align: start;
+}
+
+.fecha-noticia {
+    color: #979797;
+    font-size: small;
+}
+
+.imagen-noticia {
+    width: 20rem;
+    object-fit: fill;
+}
+
+.tarjeta-noticia a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FDFEF8;
+    background-color: #D22C18;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.pagination .page-link {
+    color: #061008
+}
+
+.pagination .active .page-link {
+    background-color: #D22C18;
+    color: white;
+    border-color: #D22C18;
+}
+
+.boton-ver {
+    display: flex;
+    align-items: end;
+}
+
+.boton-ver a:hover {
+    background-color: #061008;
+    color: #ffffff;
+}
+
+/* NOTICIA HQ */
+
+.caja-noticia {
+    display: flex;
+    flex-direction: column;
+}
+
+.portada-noticia img {
+    width: 30rem;
+}
+
+.portada-noticia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-relacionada {
+    width: 10rem;
+}
+
+.noticia-relacionada {
+    margin: 15px;
+}
+
+.noticia-relacionada,
+.noticia-relacionada h5 {
+    font-size: small;
+}
+
+.noticia-relacionada .boton-ver a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FDFEF8;
+    background-color: #D22C18;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.noticia-relacionada .boton-ver a:hover {
+    background-color: #061008;
+    color: #ffffff;
+}
+
+
 /* MEDIA QUERY */
 
 @media screen and (max-width:1335px) {
@@ -472,6 +585,7 @@ footer div {
         flex-direction: column;
         text-align: center;
     }
+
 }
 
 @media screen and (max-width:576px) {
