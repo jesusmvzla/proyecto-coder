@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <!-- SASS -->
+    <link rel="stylesheet" href="../css/estilos.css">
     <!--fonts-->
     <!--FIRA SANS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,42 +23,51 @@
 <body>
 
     <header>
-        <div class="container-fluid w-100">
-            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #061008;">
-                <div class="container-fluid">
+        <div class="container-fluid">
+            <!--bootstrap navbar-->
+            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: black;">
+                <div class="container-fluid navpadre">
+
                     <a class="navbar-brand" href="../index.html"><img src="../img/sinfondo-logo.png"
                             alt="logo ZONA AIRSOFT" width="30" height="24">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/arsenal.html">Arsenal</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/hq.html">HQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/contactos.html">Contacto</a>
-                            </li>
-                        </ul>
+
+                    <div class="botones-menu">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/arsenal.html">Arsenal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/hq.html">HQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
             </nav>
         </div>
 
         <h1>Airsoft Zone</h1>
     </header>
+
+
     <section class="container-fluid caja-contacto">
 
         <div class="informacion-contacto">
@@ -99,11 +110,32 @@
                     <label class="form-check-label" for="exampleCheck1">Quiero recibir ofertas y noticias de Airsoft
                         Zone</label>
                 </div>
-                <button type="submit" class="btn btn-primary enviar-contacto">Enviar</button>
+                <button type="submit" class="enviar-contacto">Enviar</button>
             </form>
         </div>
 
+        <!-- MODAL CARRITO -->
+
+        <div class="modal" tabindex="-1" id="modalEnviar">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Añadido al carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>¡Su producto ha sido añadido al carrito!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+                        <button type="button" class="btn btn-primary">Ir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
 
     <footer>
         <div class="footer">

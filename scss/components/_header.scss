@@ -1,0 +1,60 @@
+header {
+    font-family: "Fira Sans", sans-serif;
+
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar {
+        padding: 20px;
+        display: flex;
+        .navpadre {
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
+
+        ul {
+            list-style: none;
+            li {
+                a {
+                    color: #FDFEF8 !important;
+                    font-weight: bold !important;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    background-color: $color-primario;
+                    padding: 5px;
+                    margin: 5px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    .botones-menu {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .navbar-toggler {
+        align-self: center;
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        display: flex;
+        background-color: $color-primario;
+        width: 100%;
+        height: 50px;
+        color: #FDFEF8;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

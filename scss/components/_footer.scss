@@ -1,0 +1,42 @@
+footer {
+    background-color: $color-primario;
+    font-family: "Fira Sans", sans-serif;
+
+    h2 {
+        color: #FDFEF8;
+        padding: 8px;
+        text-align: center;
+    }
+
+    //ICONOS REDES Y LOGO
+    img {
+        width: 180px;
+        height: auto;
+    }
+
+    p {
+        text-align: center;
+        color: #FDFEF8;
+        font-weight: bold;
+    }
+
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            img {
+                margin: 15px;
+                width: 40px;
+                height: auto;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+    }
+}

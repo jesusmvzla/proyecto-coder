@@ -1,0 +1,40 @@
+//* VARIABLES
+
+$color-primario: #D22C18;
+
+//** EXTENDS **//
+
+%boton-1 {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FDFEF8;
+    background-color: $color-primario;
+    padding: 5px;
+    margin: 5px;
+    border: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+    width: auto;
+    &:hover {
+        background-color: #061008;
+        animation: BotonDestacar 0.2s ease forwards;
+    }
+}
+
+
+%destacar-img {
+    &:hover {
+        animation: BotonDestacar 0.2s ease forwards;
+    }
+}
+
+
+//** MIXIN **//
+
+@mixin tarjeta-flex ($display, $direction, $text-align, $padding) {
+    display: $display;
+    flex-direction: $direction;
+    text-align: $text-align;
+    padding: $padding;
+}

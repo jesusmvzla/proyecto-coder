@@ -1,0 +1,356 @@
+// INDEX
+
+main {
+    font-family: "Fira Sans", sans-serif;
+    color: #061008;
+    background-color: #FDFEF8;
+    text-align: center;
+
+    // INDEX-HERO
+
+    .hero-index {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        text-decoration: solid;
+        width: 100%;
+        height: 550px;
+        background-image: url(../img/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #FDFEF8;
+
+        p {
+            font-weight: bold;
+            font-size: 25px;
+            margin: 10px;
+            width: 35%;
+            opacity: 0;
+            animation: EntradaIzq 2s ease-in forwards;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 25 px;
+            font-weight: bold;
+            background-color: $color-primario;
+            color: #FDFEF8;
+            padding: 5px;
+            margin: 15px;
+            border-radius: 8px;
+            align-self: flex-start;
+            animation: EntradaIzq 2s ease-in forwards;
+            opacity: 0;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        color: #061008;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    // INDEX-POPULAR EN ARSENAL
+
+    .productos-populares {
+        img {
+            width: 200px;
+            height: auto;
+            margin: 5px;
+        }
+
+        a {
+            @extend %boton-1;
+        }
+
+        h4 {
+            font-weight: bolder;
+            font-size: 18px;
+            margin: 10px;
+            color: #000000;
+        }
+
+        .caja-producto {
+            border: solid;
+            border-radius: 8px;
+            border-color: #979797;
+            border-width: 1px;
+            margin: 5px;
+            padding: 5px;
+            background-color: #ffffff;
+            overflow: auto;
+
+            p {
+                padding: 0;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: large;
+            }
+        }
+    }
+
+
+    // MODAL CARRITO
+
+    #comprarModal,
+    #modalEnviar {
+        .modal-dialog {
+            .modal-content {
+                .modal-footer {
+                    .btn {
+                        @extend %boton-1;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// INDEX-NUEVO HQ 
+
+.nuevo-hq {
+
+    img {
+        width: 300px;
+        height: auto;
+        margin: 5px;
+        border-radius: 8px;
+        object-fit: contain;
+    }
+
+    .caja-hq {
+        display: flex;
+        border: solid;
+        border-radius: 8px;
+        border-color: #979797;
+        border-width: 1px;
+        margin: 15px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            p {
+                margin: 8px;
+            }
+
+            a {
+                @extend %boton-1;
+            }
+        }
+    }
+}
+
+
+/** NOSOTROS **/
+
+.hero-nosotros {
+    h2 {
+        text-align: center;
+        text-decoration: solid;
+        font-size: 25px;
+        color: #061008;
+    }
+
+    .imagen-nosotros {
+        object-fit: cover;
+        margin: 10px 0 10px 0;
+    }
+
+    .marcas {
+        div {
+            img {
+                padding: 5px;
+                object-fit: contain;
+                @extend %destacar-img;
+            }
+        }
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $color-primario;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    background-color: $color-primario;
+}
+
+/** ARSENAL **/
+
+.menu-arsenal {
+    ul {
+        li {
+            margin: 15px 0 15px 0;
+
+            a {
+                @extend %boton-1;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.productos-arsenal {
+    #primarias {
+        .arsenal-tarjeta {
+            background-color: #FDFEF8;
+            margin: 5px;
+            padding: 15px 5px 15px 5px;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 5px;
+
+            .imagen-tarjeta {
+                width: 180px;
+                margin: 10px;
+                justify-self: center;
+            }
+
+            h3,
+            h4 {
+                font-size: large;
+            }
+
+            p {
+                padding: 0;
+                margin: 0;
+            }
+
+            .boton-comprar {
+                @extend %boton-1;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+/** HQ **/
+
+.tarjeta-noticia {
+
+    @include tarjeta-flex (flex, column, center, 10px);
+
+    .imagen-noticia {
+        width: 20rem;
+        object-fit: fill;
+    }
+
+    p,
+    h3 {
+        text-align: left;
+        padding: 0 5px 0 5px;
+        text-align: start;
+    }
+
+    .fecha-noticia {
+        color: #979797;
+        font-size: small;
+    }
+
+
+    .boton-ver {
+        display: flex;
+        align-items: end;
+
+        a {
+            @extend %boton-1;
+            font-size: 15px;
+        }
+    }
+}
+
+
+.pagination {
+    .active {
+        .page-link {
+            background-color: $color-primario;
+            color: white;
+            border-color: $color-primario;
+        }
+    }
+
+    .page-link {
+        color: #061008
+    }
+}
+
+
+/** CONTACTO **/
+
+.caja-contacto {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+
+    .informacion-contacto {
+        padding: 10px;
+    }
+
+    .formulario-contacto {
+        font-family: "Fira Sans", sans-serif;
+        padding: 10px;
+    }
+
+    #input-mensaje {
+        height: 100px;
+    }
+
+    .enviar-contacto {
+        @extend %boton-1;
+    }
+
+}
+
+/** NOTICIAS **/
+
+.caja-noticia {
+    display: flex;
+    flex-direction: column;
+
+    .portada-noticia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 30rem;
+        }
+    }
+}
+
+.caja-relacionadas {
+    .noticia-relacionada {
+        margin: 15px;
+        font-size: small;
+
+        .imagen-relacionada {
+            width: 10rem;
+        }
+
+        h5 {
+            font-size: small;
+        }
+
+        .boton-ver {
+            a {
+                @extend %boton-1;
+                font-size: 10px;
+            }
+        }
+    }
+}

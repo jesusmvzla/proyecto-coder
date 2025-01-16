@@ -114,6 +114,8 @@ header h1 {
 main h2 {
     text-align: center;
     color: #061008;
+    padding: 5px;
+    margin: 10px;
 }
 
 main {
@@ -170,11 +172,6 @@ main {
 
 .caja-producto h3 {
     font-size: large;
-}
-
-main h2 {
-    padding: 5px;
-    margin: 10px;
 }
 
 /* HQ */
@@ -322,7 +319,7 @@ footer .redes-sociales {
     justify-content: center;
 }
 
-footer div .redes-sociales ul img {
+footer .redes-sociales ul img {
     margin: 15px;
     width: 40px;
     height: auto;

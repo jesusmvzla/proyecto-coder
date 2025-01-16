@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <!-- SASS TEST -->
+    <link rel="stylesheet" href="./css/estilos.css">
     <!--fonts-->
     <!--FIRA SANS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,35 +24,41 @@
     <header>
         <div class="container-fluid">
             <!--bootstrap navbar-->
-            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #061008;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="./img/sinfondo-logo.png" alt="logo ZONA AIRSOFT"
-                            width="30" height="24">
+            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: black;">
+                <div class="container-fluid navpadre">
+
+                    <a class="navbar-brand" href="./index.html"><img src="./img/sinfondo-logo.png"
+                            alt="logo ZONA AIRSOFT" width="30" height="24">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/arsenal.html">Arsenal</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/hq.html">HQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contactos.html">Contacto</a>
-                            </li>
-                        </ul>
+
+                    <div class="botones-menu">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/arsenal.html">Arsenal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/hq.html">HQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contactos.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
             </nav>
         </div>
@@ -59,7 +67,7 @@
     </header>
 
     <main> <!--contenido principal-->
-        <section class="hero-index"> <!--divison del contenido por tematica-->
+        <section class="hero-index">
             <p> ¡Lleva tu juego al siguiente nivel!</p>
             <p> Accede al mejor arsenal de réplicas, accesorios
                 y gear táctico diseñado para dominar el campo de batalla. Aquí encontrarás todo lo que necesitas para
@@ -69,12 +77,15 @@
         </section>
 
         <!--CAJAS PRODUCTOS POPULARES ORIGINAL GRILLA BOOTSTRAP-->
-        <h2>PRODUCTOS POPULARES</h2>
 
         <section class="container-fluid productos-populares">
+            <div>
+                <h2>PRODUCTOS POPULARES</h2>
+            </div>
+
             <div class="row justify-content-center">
 
-                <div class="caja-producto col-lg-2 col-md-6 col-xs-12">
+                <div class="caja-producto col-lg-2 col-md-6 col-sm-6">
                     <img src="./img/productos-populares/cyma.jpg" alt="cyma airsoft m4">
                     <h3>CYMA Carabina M4 AEG</h3>
                     <p>Categoría: Réplicas</p>
@@ -82,10 +93,10 @@
                     <p>Tipo: AEG</p>
                     <p>Material: Plástico y Metal</p>
                     <h4>Precio: COP$1.850.000</h4>
-                    <a href="">COMPRAR</a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#comprarModal">COMPRAR</a>
                 </div>
 
-                <div class="caja-producto col-lg-2 col-md-6 col-xs-12">
+                <div class="caja-producto col-lg-2 col-md-6 col-sm-6 col-xs-2">
                     <img src="./img/productos-populares/matrix-vest.jpg" alt="chaleco matrix airsoft">
                     <h3>MATRIX chaleco porta placas</h3>
                     <p>Categoría: Equipamiento</p>
@@ -93,10 +104,10 @@
                     <p>Tipo: Multicam</p>
                     <p>Material: Nilon</p>
                     <h4>Precio: COP$850.000</h4>
-                    <a href="">COMPRAR</a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#comprarModal">COMPRAR</a>
                 </div>
 
-                <div class="caja-producto col-lg-2 col-md-6 col-xs-12">
+                <div class="caja-producto col-lg-2 col-md-6 col-sm-6 col-xs-6">
                     <img src="./img/productos-populares/avengers-helmet.jpg" alt="casco avengers airsoft">
                     <h3>Casco ligero AVENGERS con visor</h3>
                     <p>Categoría: Equipamiento</p>
@@ -104,10 +115,10 @@
                     <p>Tipo: Verde Oliva</p>
                     <p>Material: Polímero resistente</p>
                     <h4>Precio: COP$325.000</h4>
-                    <a href="">COMPRAR</a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#comprarModal">COMPRAR</a>
                 </div>
 
-                <div class="caja-producto col-lg-2 col-md-6 col-xs-12">
+                <div class="caja-producto col-lg-2 col-md-6 col-sm-6 col-xs-6">
                     <img src="./img/productos-populares/tokyo-desert.jpg" alt="tokyo desert marui">
                     <h3>Pistola a gas Tokyo Marui Desert 4.3</h3>
                     <p>Categoría: Réplicas</p>
@@ -115,10 +126,31 @@
                     <p>Tipo: Green Gas</p>
                     <p>Material: Polímero resistente</p>
                     <h4>Precio: COP$985.000</h4>
-                    <a href="">COMPRAR</a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#comprarModal">COMPRAR</a>
                 </div>
-
         </section>
+
+        <!-- MODAL CARRITO -->
+
+        <div class="modal" tabindex="-1" id="comprarModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Añadido al carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>¡Su producto ha sido añadido al carrito!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+                            <button type="button" class="btn btn-primary">Ir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--LO NUEVO EN NUESTRO HQ -->
         <section class="nuevo-hq">

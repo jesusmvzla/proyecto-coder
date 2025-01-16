@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <!-- SASS -->
+    <link rel="stylesheet" href="../css/estilos.css">
     <!--fonts-->
     <!--FIRA SANS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,45 +21,52 @@
 </head>
 
 <body>
-
     <header>
-        <div class="container-fluid w-100">
-            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #061008;">
-                <div class="container-fluid">
+        <div class="container-fluid">
+            <!--bootstrap navbar-->
+            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: black;">
+                <div class="container-fluid navpadre">
+
                     <a class="navbar-brand" href="../index.html"><img src="../img/sinfondo-logo.png"
                             alt="logo ZONA AIRSOFT" width="30" height="24">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/arsenal.html">Arsenal</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/hq.html">HQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/contactos.html">Contacto</a>
-                            </li>
-                        </ul>
+
+                    <div class="botones-menu">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/arsenal.html">Arsenal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/hq.html">HQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
             </nav>
         </div>
+
         <h1>Airsoft Zone</h1>
     </header>
 
-
+<main>
     <section class="container-fluid arsenal-tienda">
         <!-- Menú tienda arsenal -->
         <div>
@@ -90,7 +99,8 @@
                                 <p>Tipo: AEG</p>
                                 <p>Material: Plástico y Metal</p>
                                 <h4>Precio: COP$1.850.000</h4>
-                                <a href="" class="boton-comprar">COMPRAR</a>
+                                <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                    data-bs-target="#comprarModal">COMPRAR</a>
                             </div>
 
                             <div class="col-lg-3 arsenal-tarjeta">
@@ -102,7 +112,8 @@
                                 <p>Tipo: AEG</p>
                                 <p>Material: Plástico y Metal</p>
                                 <h4>Precio: COP$2.150.000</h4>
-                                <a href="" class="boton-comprar">COMPRAR</a>
+                                <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                    data-bs-target="#comprarModal">COMPRAR</a>
                             </div>
 
                             <div class="col-lg-3 arsenal-tarjeta">
@@ -114,7 +125,8 @@
                                 <p>Tipo: AEG</p>
                                 <p>Material: Plástico y Metal</p>
                                 <h4>Precio: COP$2.350.000</h4>
-                                <a href="" class="boton-comprar">COMPRAR</a>
+                                <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                    data-bs-target="#comprarModal">COMPRAR</a>
                             </div>
                         </div>
 
@@ -132,7 +144,8 @@
                                     <p>Tipo: GreenGas</p>
                                     <p>Material: Plástico y Metal</p>
                                     <h4>Precio: COP$1.150.000</h4>
-                                    <a href="" class="boton-comprar">COMPRAR</a>
+                                    <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                        data-bs-target="#comprarModal">COMPRAR</a>
                                 </div>
 
                                 <div class="col-lg-3 arsenal-tarjeta">
@@ -144,7 +157,8 @@
                                     <p>Tipo: GreenGas</p>
                                     <p>Material: Full Metal</p>
                                     <h4>Precio: COP$1.325.000</h4>
-                                    <a href="" class="boton-comprar">COMPRAR</a>
+                                    <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                        data-bs-target="#comprarModal">COMPRAR</a>
                                 </div>
 
                                 <div class="col-lg-3 arsenal-tarjeta">
@@ -156,7 +170,8 @@
                                     <p>Tipo: GreenGas</p>
                                     <p>Material: full Metal</p>
                                     <h4>Precio: COP$1.215.000</h4>
-                                    <a href="" class="boton-comprar">COMPRAR</a>
+                                    <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                        data-bs-target="#comprarModal">COMPRAR</a>
                                 </div>
                             </div>
 
@@ -174,7 +189,8 @@
                                         <p>Tipo: Multicam</p>
                                         <p>Material: Nilon</p>
                                         <h4>Precio: COP$850.000</h4>
-                                        <a href="" class="boton-comprar">COMPRAR</a>
+                                        <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                            data-bs-target="#comprarModal">COMPRAR</a>
                                     </div>
 
                                     <div class="col-lg-3 arsenal-tarjeta">
@@ -186,7 +202,8 @@
                                         <p>Tipo: Urban Black</p>
                                         <p>Material: Nilon</p>
                                         <h4>Precio: COP$ 785.000</h4>
-                                        <a href="" class="boton-comprar">COMPRAR</a>
+                                        <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                            data-bs-target="#comprarModal">COMPRAR</a>
                                     </div>
 
                                     <div class="col-lg-3 arsenal-tarjeta">
@@ -198,7 +215,8 @@
                                         <p>Tipo: Gafas</p>
                                         <p>Material: Certificado</p>
                                         <h4>Precio: COP$350.000</h4>
-                                        <a href="" class="boton-comprar">COMPRAR</a>
+                                        <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                            data-bs-target="#comprarModal">COMPRAR</a>
                                     </div>
                                 </div>
 
@@ -216,7 +234,8 @@
                                             <p>Tipo: 4x Acog</p>
                                             <p>Material: Metal</p>
                                             <h4>Precio: COP$ 550.000</h4>
-                                            <a href="" class="boton-comprar">COMPRAR</a>
+                                            <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                                data-bs-target="#comprarModal">COMPRAR</a>
                                         </div>
 
                                         <div class="col-lg-3 arsenal-tarjeta">
@@ -228,7 +247,8 @@
                                             <p>Tipo: Red Dot</p>
                                             <p>Material: Metal</p>
                                             <h4>Precio: COP$320.000</h4>
-                                            <a href="" class="boton-comprar">COMPRAR</a>
+                                            <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                                data-bs-target="#comprarModal">COMPRAR</a>
                                         </div>
 
                                         <div class="col-lg-3 arsenal-tarjeta">
@@ -240,14 +260,36 @@
                                             <p>Tipo: Presión</p>
                                             <p>Material: Plástico y Metal</p>
                                             <h4>Precio: COP$185.000</h4>
-                                            <a href="" class="boton-comprar">COMPRAR</a>
+                                            <a href="" class="boton-comprar" data-bs-toggle="modal"
+                                                data-bs-target="#comprarModal">COMPRAR</a>
                                         </div>
                                     </div>
-
                                 </div>
     </section>
 
+                                            <!-- MODAL CARRITO -->
 
+                                            <div class="modal" tabindex="-1" id="comprarModal">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Añadido al carrito</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>¡Su producto ha sido añadido al carrito!</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                                                                comprando</button>
+                                                                <button type="button" class="btn btn-primary">Ir al carrito</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </main>
     <footer>
         <div class="footer">
             <div>
